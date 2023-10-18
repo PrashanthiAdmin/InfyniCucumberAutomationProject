@@ -20,7 +20,7 @@ public class LoginStepDefinitions extends LoginPage{
 	
 	@Before
 	public void launchBrowser() {
-		launchBrowser("Edge");
+		launchBrowser("Chrome");
 	}
 	
 	@Given("User is in login page")
@@ -68,12 +68,7 @@ public class LoginStepDefinitions extends LoginPage{
 	@After
 	public static void closeApp(Scenario scenario) throws IOException {
 		driver.close();
-		if(scenario.isFailed()) {
-			   String filePath = captureScreenshot();
-			   File file = new File(filePath);
-			   
-			   scenario.attach(Files.readAllBytes(file.toPath()), "image/png", "screenshot");
-			  }
+		
 	}
 
 }

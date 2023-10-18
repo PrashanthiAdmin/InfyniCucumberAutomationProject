@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = {"Features"},
                                         glue = {"infynicucumberautomation.stepdefinitions"},
-                                        plugin = {"pretty", "html:target/cucumber-reports/cucumberreport.html"},
+                                        plugin = {"pretty", "html:target/cucumber-reports/cucumberreport.html","json:target/cucumber-reports/cucumberreport1.json"},
                                         tags = "@logintest",
                                         monochrome = true
                                         )
