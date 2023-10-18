@@ -22,4 +22,4 @@ Examples:
 
 |EmailId|Password|
 |test678@gmail.com|Test|
-|test8765@gmail.com|Test|
+|test8765@gmail.com|Test123|
